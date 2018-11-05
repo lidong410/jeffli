@@ -2,9 +2,34 @@
         "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <title>Title</title>
+    <title>用户注册</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="../css/style.css"/>
+    <script type="text/javascript" src="../js/angular-1.5.8/angular.min.js"></script>
 </head>
-<body>
-
+<body id="ng-app">
+<div class="header"></div>
+<div class="wrapper">
+    <div class="register_box">
+        <form name="register_form">
+            <h2>用 户 注 册</h2>
+            <div class="reg_property">
+                <label>用户名：</label>
+                <input type="text" name="username" id="username"/>
+                <span><em>*</em></span>
+            </div>
+            <div class="reg_property">
+                <label>密码：</label>
+                <input type="password" name="password" id="password"/>
+                <span><em>*</em></span>
+            </div>
+            <div class="reg_property">
+                <label>确认密码：</label>
+                <input type="password" name="re-password" id="re-password"/>
+                <span><em>*</em></span>
+            </div>
+        </form>
+    </div>
+</div>
 </body>
 </html>
