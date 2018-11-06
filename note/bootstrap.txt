@@ -8,4 +8,8 @@ Bootstrap4 与 Bootstrap3
 下载地址 getbootstrap.com
 
 bootstrap是一个什么东西
-它就是一套写好的样式和配套脚本，直接在html中使用类选择器即可应用
+它就是一套写好的样式和配套脚本，直接在html中使用类选择器即可应用。
+
+布局样式
+.container 类用于固定宽度并支持响应式布局的容器。
+.container-fluid 类用于 100% 宽度，占据全部视口（viewport）的容器。

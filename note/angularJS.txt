@@ -1,0 +1,47 @@
+angularJS
+主要模块
+1. ng：		默认模块，包含AngularJS所有核心组件
+2. ngRoute:
+
+1. <html ng-app> 告诉angularJS处理整个HTML并引导应用
+ng-model=“变量名” 绑定变量
+{{变量名}} 解析变量
+
+加载方式
+1. <html xmlns:ng="http://angularjs.org" ng-app>
+	<body>
+	<script src="angular.js"><script>
+	</body>
+
+自启动 把标识ng-app放到要结点，即<html>
+如果要支持IE7,那么需要加上id="ng-app" <html ng-app id="ng-app">
+老风格加载方式 使用ng: 需要在html中加入xml命名空间 <html xmlng="http://angularjs.org">
+
+自动初始化时机
+1. DOMContentloaded事件触发时
+2. angular.js被调用时
+以上两种情况且document.readState="complate"的话
+Angular会去找ng-app这个指明应用开始的指令
+如果ng-app被找到，angular会去做以下几件事
+1. 加载ng-app指令所指定的模块
+2. 创建应用所需的injector
+3. 以ng-app为根结点开始遍历编译DOM树
+
+表达式
+{{参数}} 把数据绑定到html内，同ng-bind 可包含 数据 运算符 变量
+
+表达式可以包含字母，操作符，变量
+表达式可以写在 HTML 中。
+表达式支持过滤器。
+表达式 不支持 条件判断，循环及异常。
+
+
+常用指令
+ng-app: 初始化一个angularJA application, 在这个application内， 指令有效
+ng-init: 数据初始化， 不常用， 还有更好的方式
+ng-bind: 绑定数据
+ng-model: 把html元素的value属性绑定到application内
+ng-repeat: 用于遍历数组，对于集合中（数组中）的每个项会 克隆一次 HTML 元素。
+
+angularJS模型model与表单验证
+
